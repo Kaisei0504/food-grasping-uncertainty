@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ===== 以下は自分用の追記 =====
+# データ・結果関連は git 管理しない
+evaluate_data/
+new_dataset/
+results/
+
