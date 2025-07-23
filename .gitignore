@@ -212,3 +212,11 @@ evaluate_data/
 new_dataset/
 results/
 
+# ===== Jupyter の自動生成ファイルを無視 =====
+.ipynb_checkpoints/
+
+# ===== Python のキャッシュファイルを無視 =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
