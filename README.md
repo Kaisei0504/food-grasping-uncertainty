@@ -1,1 +1,1 @@
-# food-grasping-uncertainty
+# 複数の観点に基づく不確実性を考慮した食品把持の高精度化
