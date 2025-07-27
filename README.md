@@ -68,13 +68,13 @@ conda activate mdn_rnd_foods
 ## 📥 学習済みモデルのダウンロード
 
 すぐに実験を再現できるように、学習済みモデルを用意しています。  
-以下のリンクから **saved_model.zip** をダウンロードしてください。
+以下のリンクから **saved_models.zip** をダウンロードしてください。
 
 <div align="center">
 <a href="https://drive.google.com/file/d/1sxDVwFR5AENHmJfcUAM32IJDczkuxUOO/view?usp=sharing">
-📥 <b>trained_model.zip</b>
+📥 <b>trained_models.zip</b>
 </a>
 </div>
 <br>
 
-ダウンロード後、解凍して `checkpoints/` フォルダをプロジェクト直下に配置してください。
+ダウンロード後，解凍して `saved_models/` フォルダをプロジェクト直下に配置してください。
