@@ -55,7 +55,7 @@ class CustomSampler(torch.utils.data.Sampler):
 def main():
     # ********** 学習条件の設定 **********
     # 学習結果の保存先
-    save_path = "./results/train_100/2000epoch_lr0x001_NAdam_150samples_with_RND_sampler"
+    save_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler"
     
     # MDNのガウス分布の数
     num_gauss = 1

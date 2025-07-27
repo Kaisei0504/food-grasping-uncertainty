@@ -1,0 +1,1 @@
+epoch: 2000,                  mean MDN loss: -7.402,                  mean RND loss: 2.536e-07,                  elapsed_time :532.57epoch: 2000,                  mean MDN loss: -7.402,                  mean RND loss: 2.536e-07,                  elapsed_time :402.23

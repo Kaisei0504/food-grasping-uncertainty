@@ -22,10 +22,10 @@ from torch.distributions import Categorical
 from torch.utils.data import DataLoader, Dataset, Subset
 import torch.nn.functional as F
 
-from lib import dataset_factory_er21046
+from lib import dataset_factory
 from lib import models as model_fuctory
 from lib import loss_func
-from lib import utils_er21046
+from lib import utils
 from sklearn.model_selection import KFold
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
@@ -52,7 +52,7 @@ class CustomSampler(torch.utils.data.Sampler):
 
 def main():
     # ********** 学習条件の設定 **********
-    save_path = "./results_er21046/depth40/train_200/2000epoch_lr0x001_NAdam_200samples_with_RND"
+    save_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND"
     num_gauss = 1
     init_lr = 0.001
     max_epoch = 2000
@@ -68,18 +68,18 @@ def main():
     torch.backends.cudnn.benchmark = False
 
     # ********** 学習の準備 **********
-    with open('./new_dataset_er21046/train300/divide_ids/data_train_300.pickle', mode='br') as fi:
+    with open('./datasets/train_data/divide_ids/data_train_100.pickle', mode='br') as fi:
         id_train = pickle.load(fi)
     id_train = id_train[0].tolist()
     print(id_train)
     print("")
     
     # データセット
-    train_data = dataset_factory_er21046.RGBD_DATASET(root="./new_dataset_er21046/train300", use_ids = id_train, train=True, img_size=150, crop_size=140)
+    train_data = dataset_factory.RGBD_DATASET(root="./datasets/train_data", use_ids = id_train, train=True, img_size=150, crop_size=140)
         
     num_data = len(train_data)
-    print(len(train_data))
-    print("# data : ", num_data)
+    #print(len(train_data))
+    #print("# data : ", num_data)
     
     train_loader = torch.utils.data.DataLoader(train_data,
                                                batch_size=8,
@@ -127,8 +127,8 @@ def main():
         losses_rnd_list = [] 
         losses_rnd_list_up = [0] * num_data
 
-        utils_er21046.adjust_learning_rate(optimizer, init_lr, epoch, max_epoch, warmup_epoch)
-        utils_er21046.adjust_learning_rate(optimizer_rnd, init_lr, epoch, max_epoch, warmup_epoch)
+        utils.adjust_learning_rate(optimizer, init_lr, epoch, max_epoch, warmup_epoch)
+        utils.adjust_learning_rate(optimizer_rnd, init_lr, epoch, max_epoch, warmup_epoch)
 
         if epoch <= 2000:
             sampler = CustomSampler(train_data, initial_sampling_probabilities)
