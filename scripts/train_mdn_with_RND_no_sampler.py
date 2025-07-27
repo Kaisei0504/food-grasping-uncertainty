@@ -52,7 +52,7 @@ class CustomSampler(torch.utils.data.Sampler):
 
 def main():
     # ********** 学習条件の設定 **********
-    save_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND"
+    save_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_own"
     num_gauss = 1
     init_lr = 0.001
     max_epoch = 2000
