@@ -1,7 +1,6 @@
-### 2. docs/evaluation_guide.md
-# 📊 評価手順ガイド
+## 📊 評価手順ガイド
 
-## 比較手法一覧
+### 比較手法一覧
 
 | 手法 | パス変更先 | 説明 |
 |------|------------|------|
@@ -10,7 +9,7 @@
 | **RND+MDN** | `no_sampler_RNDMDN` | 両方の不確実性を考慮 |
 | **RND+MDN+Sampler** | `show_results_with_RND_sampler.ipynb`で確認 | **提案手法** |
 
-## パス変更方法
+### パス変更方法
 
 `show_results_with_RND_no_sampler.ipynb`内の以下のコードを変更：
 
