@@ -40,3 +40,10 @@
 ✅ **UA-Sampler導入により把持成功率がさらに向上**  
 
 
+## 📦 データセットの準備
+
+以下のリンクから **datasets.zip** をダウンロードしてください。
+
+[📥 datasets](https://drive.google.com/file/d/12knaV2kl6SQ5Z_WgBstMfIae5uKI1By0/view?usp=sharing)
+
+ダウンロード後，解凍して `datasets/` フォルダをプロジェクト直下に配置してください．
