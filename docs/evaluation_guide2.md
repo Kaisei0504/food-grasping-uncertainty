@@ -1,7 +1,7 @@
 ## 📊 評価手順ガイド2
 
 ### 学習後の評価（モデルパス変更が必要）
-学習実行後は、各ノートブック内のモデル読み込みパスを変更してください：
+学習実行後は，各ノートブック内のモデル読み込みパスを変更してください．
 
 **`show_results_with_RND_no_sampler.ipynb`**
 ```python
@@ -23,15 +23,15 @@ load_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler_
 #        
 ```
 
-**`show_results_with_RND_no_sampler.ipynb`使用の場合，以下のコードを変更することで各手法の比較可能：**
+**`show_results_with_RND_no_sampler.ipynb` 使用の場合，以下のコードを変更することで各手法の比較可能**
 
 ### 比較手法一覧
 | 手法 | パス変更先 | 説明 |
 |------|------------|------|
-| **RNDのみ** | `no_sampler_RND_only` | 未知度のみ考慮 |
-| **MDNのみ** | `no_sampler_MDN_only` | 把持量ばらつきのみ考慮 |
-| **RND+MDN** | `no_sampler_RNDMDN` | 両方の不確実性を考慮 |
-| **RND+MDN+Sampler** | `show_results_with_RND_sampler.ipynb`で確認 | **提案手法** |
+| **未知度のみ** | `no_sampler_RND_only` | 未知度のみ考慮 |
+| **ばらつきのみ** | `no_sampler_MDN_only` | 把持量ばらつきのみ考慮 |
+| **未知度+ばらつき** | `no_sampler_RNDMDN` | 両方の不確実性を考慮 |
+| **未知度+ばらつき+Sampler** | `show_results_with_RND_sampler.ipynb`で確認 | **提案手法** |
 
 ```python
 # 評価用データ

@@ -4,10 +4,10 @@
 
 | 手法 | パス変更先 | 説明 |
 |------|------------|------|
-| **RNDのみ** | `no_sampler_RND_only` | 未知度のみ考慮 |
-| **MDNのみ** | `no_sampler_MDN_only` | 把持量ばらつきのみ考慮 |
-| **RND+MDN** | `no_sampler_RNDMDN` | 両方の不確実性を考慮 |
-| **RND+MDN+Sampler** | `show_results_with_RND_sampler.ipynb`で確認 | **提案手法** |
+| **未知度のみ** | `no_sampler_RND_only` | 未知度のみ考慮 |
+| **ばらつきのみ** | `no_sampler_MDN_only` | 把持量ばらつきのみ考慮 |
+| **未知度+ばらつき** | `no_sampler_RNDMDN` | 両方の不確実性を考慮 |
+| **未知度+ばらつき+Sampler** | `show_results_with_RND_sampler.ipynb`で確認 | **提案手法** |
 
 ### パス変更方法
 
