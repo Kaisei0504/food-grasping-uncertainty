@@ -45,11 +45,10 @@
 以下のリンクから **datasets.zip** をダウンロードしてください。
 
 <div align="center">
-
 <a href="https://drive.google.com/file/d/12knaV2kl6SQ5Z_WgBstMfIae5uKI1By0/view?usp=sharing">
 📥 <b>datasets.zip</b>
 </a>
-
 </div>
+<br><br>
 
 ダウンロード後，解凍して `datasets/` フォルダをプロジェクト直下に配置してください．
