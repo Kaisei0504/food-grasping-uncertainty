@@ -26,6 +26,15 @@
 - **評価指標**：モデルの予測把持量とピッキングロボットの実際把持量との差
 - **比較方法**：各手法による把持精度の比較評価
 
+各手法とは？
+
+| 手法 | 説明 | 特徴 |
+|------|------|------|
+| **RNDのみ** | Random Network Distillationによる未知度合いのみを考慮 | 新規性検出に特化 |
+| **MDNのみ** | Mixture Density Networkによる把持量のばらつきのみを考慮 | 不確実性定量化に特化 |
+| **RND+MDN** | 未知度合いと把持量のばらつきの両方を考慮 | 多観点不確実性考慮 |
+| **RND+MDN+Sampler** | 上記 + UA-Samplerによる学習データ選択最適化 | **提案手法** |
+
 ## 📊 実験結果
 
 | 未知度合い | ばらつき | UASampler | ±0.1g | ±0.5g | ±1.0g | ±1.5g | ±2.0g | ±2.5g | ±3.0g |
@@ -81,13 +90,14 @@ conda activate mdn_rnd_foods
 
 ダウンロード後，解凍して `saved_models/` フォルダをプロジェクト直下に配置してください．
 
-### 評価のみ実行（約5分）
+### 評価のみ実行（約10分）
+
 ```bash
 jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
 jupyter notebook scripts/show_results_with_RND_sampler.ipynb
 ```
 
-### 学習から実行（約35分）
+### 学習から実行（約90分）
 ```bash
 python scripts/train_mdn_with_RND_no_sampler.py
 python scripts/train_mdn_with_RND_sampler.py
