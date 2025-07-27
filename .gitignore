@@ -210,7 +210,7 @@ __marimo__/
 # データ・結果関連は git 管理しない
 datasets/
 bfg.jar/
-results/
+saved_models/
 food-grasping-uncertainty.git/
 food-grasping-uncertainty.git.bfg-report/
 
