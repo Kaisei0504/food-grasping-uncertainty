@@ -83,21 +83,18 @@ class RGBD_DATASET(torch.utils.data.Dataset):
             # *** データの読み込み ***
             with open(target_path) as f:
                 target = f.read()
-                
+
             xyz_path = base_path.split('/')
             xyz_path[3] = "xyz_robot"
             xyz_path = os.path.join(*xyz_path) + ".csv"
             grasp_info = np.genfromtxt(xyz_path, delimiter=',')
             grasp_z  = grasp_info[1, 2]
             
-            # 各データとをリストに保存
-            if float(target) > 0 and float(target) < 8:
-                if len(self.targets_list) < 150:  # targetの数が150未満なら追加
-                    self.image_list.append(image)
-                    self.depth_list.append(depth)
-                    #self.grasp_z_list.append(float(40))
-                    self.grasp_z_list.append(float(grasp_z))
-                    self.targets_list.append(float(target))
+            self.image_list.append(image)
+            self.depth_list.append(depth)
+            #self.grasp_z_list.append(float(40))
+            self.grasp_z_list.append(float(grasp_z))
+            self.targets_list.append(float(target))
                 
         print("target：",len(self.targets_list))
         print("color ：",len(self.image_list))

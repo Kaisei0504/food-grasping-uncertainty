@@ -54,7 +54,7 @@ class RGBD_DATASET(torch.utils.data.Dataset):
             # depthデータの読み込み
             # *** pathの作成 ***
             depth_path = base_path.split('/')
-            depth_path[3] = "csv_depth_crop"
+            depth_path[4] = "csv_depth_crop"
             depth_path = os.path.join(*depth_path) + ".csv"
             # *** データの読み込み ***
             with open(depth_path) as file:
@@ -78,14 +78,14 @@ class RGBD_DATASET(torch.utils.data.Dataset):
             # 把持量データの読み込み
             # *** pathの作成 ***
             target_path = base_path.split('/')
-            target_path[3] = "grams"
+            target_path[4] = "grams"
             target_path = os.path.join(*target_path) + ".txt"
             # *** データの読み込み ***
             with open(target_path) as f:
                 target = f.read()
-                
+
             xyz_path = base_path.split('/')
-            xyz_path[3] = "xyz_robot"
+            xyz_path[4] = "xyz_robot"
             xyz_path = os.path.join(*xyz_path) + ".csv"
             grasp_info = np.genfromtxt(xyz_path, delimiter=',')
             grasp_z  = grasp_info[1, 2]
@@ -96,8 +96,8 @@ class RGBD_DATASET(torch.utils.data.Dataset):
             self.grasp_z_list.append(float(grasp_z))
             self.targets_list.append(float(target))
                 
-        #print("target：",len(self.targets_list))
-        #print("color ：",len(self.image_list))
+        print("target：",len(self.targets_list))
+        print("color ：",len(self.image_list))
             
     def __len__(self):
         return len(self.image_list)

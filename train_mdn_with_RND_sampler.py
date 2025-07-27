@@ -22,10 +22,10 @@ from torch.distributions import Categorical
 from torch.utils.data import DataLoader, Dataset
 import torch.nn.functional as F
 
-from lib import dataset_factory_er21046_v1
+from lib import dataset_factory
 from lib import models as model_fuctory
 from lib import loss_func
-from lib import utils_er21046
+from lib import utils
 from sklearn.model_selection import KFold
 from collections import Counter
 from datetime import datetime
@@ -55,7 +55,7 @@ class CustomSampler(torch.utils.data.Sampler):
 def main():
     # ********** 学習条件の設定 **********
     # 学習結果の保存先
-    save_path = "./results_er21046/depth40/train_100/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler"
+    save_path = "./results/train_100/2000epoch_lr0x001_NAdam_150samples_with_RND_sampler"
     
     # MDNのガウス分布の数
     num_gauss = 1
@@ -82,7 +82,7 @@ def main():
 
     # ********** 学習の準備 ********** 
     # 学習データの読み込み
-    with open('./new_dataset_er21046/train100/divide_ids/data_train_100.pickle', mode='br') as fi:
+    with open('./datasets/train_data/divide_ids/data_train_100.pickle', mode='br') as fi:
         id_train = pickle.load(fi)
     id_train = id_train[0].tolist()
     print(id_train)
@@ -90,7 +90,7 @@ def main():
     print("")
     
     # データセット
-    train_data = dataset_factory_er21046_v1.RGBD_DATASET(root="./new_dataset_er21046/train100", use_ids = id_train, train=True, img_size=150, crop_size=140)
+    train_data = dataset_factory.RGBD_DATASET(root="./datasets/train_data", use_ids = id_train, train=True, img_size=150, crop_size=140)
     train_loader = torch.utils.data.DataLoader(train_data,
                                                batch_size=8,
                                                shuffle=True,
@@ -112,13 +112,12 @@ def main():
     target_net = target_net.cuda()
     
     # 各モデルのパラメータ総数の表示
-    total_params_net = sum(p.numel() for p in net.parameters())
-    total_params_predict = sum(p.numel() for p in predict_net.parameters())
-    total_params_target = sum(p.numel() for p in target_net.parameters())
-
-    print(f"Total parameters in net: {total_params_net}")
-    print(f"Total parameters in predict_net: {total_params_predict}")
-    print(f"Total parameters in target_net: {total_params_target}")
+    #total_params_net = sum(p.numel() for p in net.parameters())
+    #total_params_predict = sum(p.numel() for p in predict_net.parameters())
+    #total_params_target = sum(p.numel() for p in target_net.parameters())
+    #print(f"Total parameters in net: {total_params_net}")
+    #print(f"Total parameters in predict_net: {total_params_predict}")
+    #print(f"Total parameters in target_net: {total_params_target}")
     
     # オプティマイザ
     optimizer = optim.NAdam(net.parameters(), lr=init_lr)
@@ -156,8 +155,8 @@ def main():
         losses_rnd_list_up = [0] * 100
         
         # 学習率の調整
-        utils_er21046.adjust_learning_rate(optimizer, init_lr, epoch, max_epoch, warmup_epoch)
-        utils_er21046.adjust_learning_rate(optimizer_rnd, init_lr, epoch, max_epoch, warmup_epoch)
+        utils.adjust_learning_rate(optimizer, init_lr, epoch, max_epoch, warmup_epoch)
+        utils.adjust_learning_rate(optimizer_rnd, init_lr, epoch, max_epoch, warmup_epoch)
         
         # 200epoch以降からsamplerを適用
         if epoch <= 200:
