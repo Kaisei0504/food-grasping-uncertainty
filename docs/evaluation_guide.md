@@ -1,5 +1,4 @@
 ### 2. docs/evaluation_guide.md
-```markdown
 # 📊 評価手順ガイド
 
 ## 比較手法一覧
@@ -20,3 +19,4 @@
 with open('./datasets/evaluate_data/no_sampler_RND_only/divide_ids/data_test_100.pickle', mode='br') as fi:
 #                                   ^^^^^^^^^^^^^^^^^^
 #                                   この部分を上記表のパス変更先に変更
+```

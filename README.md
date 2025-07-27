@@ -96,13 +96,11 @@ conda activate mdn_rnd_foods
 
 #### 1. RND+MDN+Sampler の評価（提案手法）
 ```bash
-# UA-Samplerありの結果確認（約3分）
 jupyter notebook scripts/show_results_with_RND_sampler.ipynb
 ```
 
 #### 2. その他の手法の評価（パス変更が必要）
 ```bash
-# 他の比較手法の結果確認（約5分）
 jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
 ```
 **📋 詳細な評価手順・比較手法については → [評価手順ガイド](docs/evaluation_guide.md)**
