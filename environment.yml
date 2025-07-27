@@ -10,10 +10,10 @@ dependencies:
   - torchaudio=2.1.0
   - pytorch-cuda=12.1
   - jupyterlab
-  - ipykernel
-  - numpy=1.22.2       
+  - ipykernel      
   - pip
   - pip:
+      - numpy<2 
       - opencv-python
       - tqdm
       - matplotlib
