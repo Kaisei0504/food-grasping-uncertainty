@@ -39,6 +39,22 @@
 ✅ **未知度合いと把持量のばらつきの考慮により把持成功率が向上**  
 ✅ **UA-Sampler導入により把持成功率がさらに向上**  
 
+## ⚙️ 環境構築
+このリポジトリは NVIDIA NGC の PyTorch コンテナ (23.08) 相当の環境を想定しています．
+以下の `environment.yml` を使って Conda 環境を構築してください．
+
+## 🔧 環境構築
+
+### Conda環境の作成
+
+#### 環境ファイルから環境作成
+```bash
+conda env create -f environment.yml
+```
+#### 環境をアクティベート
+```bash
+conda activate mdn_rnd_foods
+```
 
 ## 📦 データセットの準備
 
