@@ -82,6 +82,24 @@ food-grasping-uncertainty/
 
 ## 🚀 クイックスタート（再現実験）
 
+### 🛠 Conda のインストール（まだ Conda が入っていない場合）
+
+以下の手順で Miniconda をインストールしてください.（Ubuntu の例）
+
+```bash
+# ホームディレクトリに移動
+cd ~
+```
+
+```bash
+# Miniconda インストーラをダウンロード
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+```bash
+# インストーラを実行
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
 ### ⚙️ 環境構築
 このリポジトリは NVIDIA NGC の PyTorch コンテナ (23.08) 相当の環境を想定しています．
 以下の `environment.yml` を使って Conda 環境を構築してください．
