@@ -209,10 +209,10 @@ __marimo__/
 # ===== 以下は自分用の追記 =====
 # データ・結果関連は git 管理しない
 datasets/
-bfg.jar/
 saved_models/
 food-grasping-uncertainty.git/
 food-grasping-uncertainty.git.bfg-report/
+bfg.jal/
 
 
 # ===== Jupyter の自動生成ファイルを無視 =====

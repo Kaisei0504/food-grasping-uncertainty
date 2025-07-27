@@ -74,7 +74,7 @@ conda activate mdn_rnd_foods
 
 <div align="center">
 <a href="https://drive.google.com/file/d/1sxDVwFR5AENHmJfcUAM32IJDczkuxUOO/view?usp=sharing">
-📥 <b>trained_models.zip</b>
+📥 <b>saved_models.zip</b>
 </a>
 </div>
 <br>
