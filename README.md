@@ -81,6 +81,23 @@ conda activate mdn_rnd_foods
 
 ダウンロード後，解凍して `saved_models/` フォルダをプロジェクト直下に配置してください．
 
+### 評価のみ実行（約5分）
+```bash
+jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
+jupyter notebook scripts/show_results_with_RND_sampler.ipynb
+```
+
+### 学習から実行（約35分）
+```bash
+python scripts/train_mdn_with_RND_no_sampler.py
+python scripts/train_mdn_with_RND_sampler.py
+```
+
+```bash
+jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
+jupyter notebook scripts/show_results_with_RND_sampler.ipynb
+```
+
 ### 📂 ディレクトリ構造
 ```
 food-grasping-uncertainty/
