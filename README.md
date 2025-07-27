@@ -155,7 +155,7 @@ JupyterLab がブラウザで開いたら，
 
 2. パス変更が必要
 
- **📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
+  **📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
 
 3. セルを上から順に実行
 JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
@@ -183,7 +183,7 @@ python train_mdn_with_RND_no_sampler.py
 ```
 2. `scripts/` フォルダの中にある `show_results_with_RND_no_sampler.ipynb` を選択して開き，実行
 
- **📋 詳細な評価手順・比較手法については → [評価手順ガイド2](docs/evaluation_guide2.md)**
+  **📋 詳細な評価手順・比較手法については → [評価手順ガイド2](docs/evaluation_guide2.md)**
 
 
 
