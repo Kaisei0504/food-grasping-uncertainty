@@ -42,7 +42,7 @@
 | ✓ |  |  | **7** | 14 | 29 | 45 | 54 | 58 | 73 |
 |  | ✓ |  | 1 | 11 | 23 | 38 | 51 | 61 | 73 |
 | ✓ | ✓ |  | 3 | 23 | 35 | 55 | 62 | 68 | 82 |
-| ✓ | ✓ | ✓ | 6 | **27** | **49** | **64** | **74** | **81** | **88** |
+| ✓ | ✓ | ✓ | 6 | **31** | **49** | **64** | **74** | **81** | **88** |
 
 
 ✅ **未知度と把持量のばらつきの考慮により把持成功率が向上**  
@@ -82,7 +82,7 @@ food-grasping-uncertainty/
 
 ## 🚀 クイックスタート（再現実験）
 
-### 🛠 Conda のインストール（まだ Conda が入っていない場合）
+### 🛠 Conda のインストール（Conda が入っていない場合）
 
 以下の手順で Miniconda をインストールしてください.（Ubuntu の例）
 
@@ -136,29 +136,53 @@ conda activate mdn_rnd_foods
 ### ⚡評価のみ実行（約10分）
 各比較手法の把持成功率を確認できます．
 
-#### 1. RND+MDN+Sampler の評価（提案手法）
+#### 1. 未知度+ばらつき+Sampler の評価（提案手法）
+1. JupyterLab を起動
 ```bash
-jupyter notebook scripts/show_results_with_RND_sampler.ipynb
+jupyter lab
 ```
+2. ノートブックを開く
+JupyterLab がブラウザで開いたら、
+`scripts/` フォルダの中にある `show_results_with_RND_sampler.ipynb` を選択して開きます．
 
-#### 2. その他の手法の評価（パス変更が必要）
-```bash
-jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
-```
+3. セルを上から順に実行
+JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
+
+#### 2. その他の手法の評価
+1. ノートブックを開く
+JupyterLab がブラウザで開いたら、
+`scripts/` フォルダの中にある `show_results_with_RND_no_sampler.ipynb` を選択して開きます．
+
+2. パス変更が必要
 **📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
 
+3. セルを上から順に実行
+JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
 
 ### ⚡学習から実行（約90分）
+各比較手法の把持成功率を確認できます．
+
+#### 1. 未知度+ばらつき+Sampler の評価（提案手法）
+1. JupyterLab を起動 (起動してない場合)
 ```bash
-python scripts/train_mdn_with_RND_no_sampler.py
-python scripts/train_mdn_with_RND_sampler.py
+jupyter lab
 ```
 
+2. 学習用コードをターミナルで実行
 ```bash
-jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
-jupyter notebook scripts/show_results_with_RND_sampler.ipynb
+python train_mdn_with_RND_sampler.py
 ```
+3. `scripts/` フォルダの中にある `show_results_with_RND_sampler.ipynb` を選択して開き，実行
+
+#### 2. その他の手法の評価
+
+1. 学習用コードをターミナルで実行
+```bash
+python train_mdn_with_RND_no_sampler.py
+```
+2. `scripts/` フォルダの中にある `show_results_with_RND_no_sampler.ipynb` を選択して開き，実行
 
 **📋 詳細な評価手順・比較手法については → [評価手順ガイド2](docs/evaluation_guide2.md)**
+
 
 
