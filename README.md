@@ -155,7 +155,7 @@ JupyterLab がブラウザで開いたら，
 
 2. パス変更が必要
 
- **📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
+    **📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
 
 3. セルを上から順に実行
 JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
