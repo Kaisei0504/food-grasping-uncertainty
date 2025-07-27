@@ -87,16 +87,8 @@ food-grasping-uncertainty/
 以下の手順で Miniconda をインストールしてください.（Ubuntu の例）
 
 ```bash
-# ホームディレクトリに移動
 cd ~
-```
-
-```bash
-# Miniconda インストーラをダウンロード
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-```
-```bash
-# インストーラを実行
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
