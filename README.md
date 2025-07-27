@@ -43,8 +43,6 @@
 このリポジトリは NVIDIA NGC の PyTorch コンテナ (23.08) 相当の環境を想定しています．
 以下の `environment.yml` を使って Conda 環境を構築してください．
 
-### Conda環境の作成
-
 #### 環境ファイルから環境作成
 ```bash
 conda env create -f environment.yml
