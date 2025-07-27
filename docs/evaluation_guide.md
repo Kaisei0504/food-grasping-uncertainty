@@ -17,5 +17,18 @@
 # 評価用データ
 with open('./datasets/evaluate_data/no_sampler_RND_only/divide_ids/data_test_100.pickle', mode='br') as fi:
 #                                   ^^^^^^^^^^^^^^^^^^
-#                                   この部分を上記表のパス変更先に変更
+#                             この部分を上記表のパス変更先に変更
+```
+
+```python
+# データセット
+test_data = dataset_factory_v1.RGBD_DATASET(root="./datasets/evaluate_data/no_sampler_RND_only", use_ids = id_test, train=False, img_size=150, crop_size=140)
+#                                                                          ^^^^^^^^^^^^^^^^^^^
+#                                                                             同じパスに変更
+```
+
+```python
+path_list = sorted(glob.glob( "./datasets/evaluate_data/no_sampler_RND_only/color/*"))
+#                                                       ^^^^^^^^^^^^^^^^^^^
+#                                                          同じパスに変更
 ```
