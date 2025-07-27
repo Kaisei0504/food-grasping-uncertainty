@@ -107,14 +107,6 @@ jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
 ```
 **📋 詳細な評価手順・比較手法については → [評価手順ガイド](docs/evaluation_guide.md)**
 
-**比較可能な手法とパス設定：** `show_results_with_RND_no_sampler.ipynb` 内の以下のコードのパスを変更
-
-```python
-# 評価用データ
-with open('./datasets/evaluate_data/no_sampler_RND_only/divide_ids/data_test_100.pickle', mode='br') as fi:
-#                                   ^^^^^^^^^^^^^^^^^^
-#                                   この部分を下記に変更
-```
 
 ### 学習から実行（約90分）
 ```bash
