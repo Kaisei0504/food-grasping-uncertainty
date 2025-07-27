@@ -136,7 +136,7 @@ conda activate mdn_rnd_foods
 ### ⚡評価のみ実行（約10分）
 各比較手法の把持成功率を確認できます．
 
-#### ・未知度+ばらつき+Sampler の評価（提案手法）
+#### 未知度+ばらつき+Sampler の評価（提案手法）
 1. JupyterLab を起動
 ```bash
 jupyter lab
@@ -148,7 +148,7 @@ JupyterLab がブラウザで開いたら、
 3. セルを上から順に実行
 JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
 
-#### ・その他の手法の評価
+#### その他の手法の評価
 1. ノートブックを開く
 JupyterLab がブラウザで開いたら，
 `scripts/` フォルダの中にある `show_results_with_RND_no_sampler.ipynb` を選択して開きます．
@@ -163,7 +163,7 @@ JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で �
 ### ⚡学習から実行（約90分）
 各比較手法の把持成功率を確認できます．
 
-#### ・未知度+ばらつき+Sampler の評価（提案手法）
+#### 未知度+ばらつき+Sampler の評価（提案手法）
 1. JupyterLab を起動 (起動してない場合)
 ```bash
 jupyter lab
@@ -175,7 +175,7 @@ python train_mdn_with_RND_sampler.py
 ```
 3. `scripts/` フォルダの中にある `show_results_with_RND_sampler.ipynb` を選択して開き，実行
 
-#### ・その他の手法の評価
+#### その他の手法の評価
 
 1. 学習用コードをターミナルで実行
 ```bash
