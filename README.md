@@ -103,7 +103,7 @@ jupyter notebook scripts/show_results_with_RND_sampler.ipynb
 ```bash
 jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
 ```
-**📋 詳細な評価手順・比較手法については → [評価手順ガイド](docs/evaluation_guide.md)**
+**📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
 
 
 ### ⚡学習から実行（約90分）
@@ -117,11 +117,15 @@ jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
 jupyter notebook scripts/show_results_with_RND_sampler.ipynb
 ```
 
+**📋 詳細な評価手順・比較手法については → [評価手順ガイド2](docs/evaluation_guide2.md)**
+
+
 ### 📂 ディレクトリ構造
 ```
 food-grasping-uncertainty/
 ├── docs/                                         
-|   └── evaluation_guide.md                       # 評価手順ガイド
+|   ├── evaluation_guide.md                       # 評価手順ガイド1
+|   └── evaluation_guide2.md                      # 評価手順ガイド2
 |
 ├── lib/                                          # コア実装
 │   ├── models.py                                 # ニューラルネットワークモデル
