@@ -211,6 +211,7 @@ __marimo__/
 datasets/
 bfg.jar/
 saved_models/
+saved_models.zip/
 food-grasping-uncertainty.git/
 food-grasping-uncertainty.git.bfg-report/
 

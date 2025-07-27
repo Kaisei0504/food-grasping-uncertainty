@@ -52,7 +52,7 @@ conda env create -f environment.yml
 conda activate mdn_rnd_foods
 ```
 
-## 📦 データセットの準備
+## 📥 データセットのダウンロード
 
 以下のリンクから **datasets.zip** をダウンロードしてください。
 
@@ -64,3 +64,17 @@ conda activate mdn_rnd_foods
 <br>
 
 ダウンロード後，解凍して `datasets/` フォルダをプロジェクト直下に配置してください．
+
+## 📥 学習済みモデルのダウンロード
+
+すぐに実験を再現できるように、学習済みモデルを用意しています。  
+以下のリンクから **saved_model.zip** をダウンロードしてください。
+
+<div align="center">
+<a href="https://drive.google.com/file/d/1sxDVwFR5AENHmJfcUAM32IJDczkuxUOO/view?usp=sharing">
+📥 <b>trained_model.zip</b>
+</a>
+</div>
+<br>
+
+ダウンロード後、解凍して `checkpoints/` フォルダをプロジェクト直下に配置してください。
