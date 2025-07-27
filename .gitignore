@@ -212,7 +212,7 @@ datasets/
 saved_models/
 food-grasping-uncertainty.git/
 food-grasping-uncertainty.git.bfg-report/
-bfg.jal/
+bfg.jar/
 
 
 # ===== Jupyter の自動生成ファイルを無視 =====
