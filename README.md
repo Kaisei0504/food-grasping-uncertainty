@@ -91,8 +91,8 @@ conda activate mdn_rnd_foods
 ダウンロード後，解凍して `saved_models/` フォルダをプロジェクト直下に配置してください．
 
 
-### 評価のみ実行（約10分）
-**各比較手法の把持成功率を確認できます**
+### ⚡評価のみ実行（約10分）
+各比較手法の把持成功率を確認できます．
 
 #### 1. RND+MDN+Sampler の評価（提案手法）
 ```bash
@@ -106,7 +106,7 @@ jupyter notebook scripts/show_results_with_RND_no_sampler.ipynb
 **📋 詳細な評価手順・比較手法については → [評価手順ガイド](docs/evaluation_guide.md)**
 
 
-### 学習から実行（約90分）
+### ⚡学習から実行（約90分）
 ```bash
 python scripts/train_mdn_with_RND_no_sampler.py
 python scripts/train_mdn_with_RND_sampler.py
@@ -120,6 +120,9 @@ jupyter notebook scripts/show_results_with_RND_sampler.ipynb
 ### 📂 ディレクトリ構造
 ```
 food-grasping-uncertainty/
+├── docs/                                         
+|   └── evaluation_guide.md                       # 評価手順ガイド
+|
 ├── lib/                                          # コア実装
 │   ├── models.py                                 # ニューラルネットワークモデル
 │   ├── loss_func.py                              # 損失関数（MDN）
