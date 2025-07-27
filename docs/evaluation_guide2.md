@@ -6,20 +6,20 @@
 **`show_results_with_RND_no_sampler.ipynb`**
 ```python
 # 変更前（デフォルト）
-load_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler"
+load_path = "../saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler"
 
 # 変更後（学習後）  
-load_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_own"
+load_path = "../saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_own"
 #  
 ```
 
 **`show_results_with_RND_sampler.ipynb`**
 ```python
 # 変更前（デフォルト）
-load_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND"
+load_path = "../saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND"
 
 # 変更後（学習後）
-load_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler_own"
+load_path = "../saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler_own"
 #        
 ```
 
@@ -35,21 +35,21 @@ load_path = "./saved_models/2000epoch_lr0x001_NAdam_100samples_with_RND_sampler_
 
 ```python
 # 評価用データ
-with open('./datasets/evaluate_data/no_sampler_RND_only/divide_ids/data_test_100.pickle', mode='br') as fi:
-#                                   ^^^^^^^^^^^^^^^^^^
-#                             この部分を上記表のパス変更先に変更
+with open('../datasets/evaluate_data/no_sampler_RND_only/divide_ids/data_test_100.pickle', mode='br') as fi:
+#                                    ^^^^^^^^^^^^^^^^^^
+#                              この部分を上記表のパス変更先に変更
 ```
 
 ```python
 # データセット
-test_data = dataset_factory_v1.RGBD_DATASET(root="./datasets/evaluate_data/no_sampler_RND_only", use_ids = id_test, train=False, img_size=150, crop_size=140)
-#                                                                          ^^^^^^^^^^^^^^^^^^^
-#                                                                             同じパスに変更
+test_data = dataset_factory_v1.RGBD_DATASET(root="../datasets/evaluate_data/no_sampler_RND_only", use_ids = id_test, train=False, img_size=150, crop_size=140)
+#                                                                           ^^^^^^^^^^^^^^^^^^^
+#                                                                              同じパスに変更
 ```
 
 ```python
-path_list = sorted(glob.glob( "./datasets/evaluate_data/no_sampler_RND_only/color/*"))
-#                                                       ^^^^^^^^^^^^^^^^^^^
-#                                                          同じパスに変更
+path_list = sorted(glob.glob( "../datasets/evaluate_data/no_sampler_RND_only/color/*"))
+#                                                        ^^^^^^^^^^^^^^^^^^^
+#                                                           同じパスに変更
 ```
 
