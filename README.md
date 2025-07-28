@@ -146,7 +146,6 @@ JupyterLab がブラウザで開いたら、
 `scripts/` フォルダの中にある `show_results_with_RND_sampler.ipynb` を選択して開きます．
 
 3. セルを上から順に実行
-
     JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
 
 #### その他の手法の評価
