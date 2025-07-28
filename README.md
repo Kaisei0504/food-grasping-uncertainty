@@ -145,8 +145,7 @@ jupyter lab
 JupyterLab がブラウザで開いたら、
 `scripts/` フォルダの中にある `show_results_with_RND_sampler.ipynb` を選択して開きます．
 
-3. セルを上から順に実行
-    JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
+3. セルを実行(「セル」→「すべて実行」or Shift + Enter で上から順に)
 
 #### その他の手法の評価
 1. ノートブックを開く
@@ -157,9 +156,7 @@ JupyterLab がブラウザで開いたら，
 
    **📋 詳細な評価手順・比較手法については → [評価手順ガイド1](docs/evaluation_guide.md)**
 
-3. セルを上から順に実行
-
-JupyterLab 上で 「セル」→「すべて実行」 か，Shift + Enter で 上から順に実行 してください．
+3. セルを実行(「セル」→「すべて実行」or Shift + Enter で上から順に)
 
 ### ⚡学習から実行（約90分）
 各比較手法の把持成功率を確認できます．
