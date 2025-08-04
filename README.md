@@ -83,8 +83,7 @@ food-grasping-uncertainty/
 ## 🚀 クイックスタート（再現実験）
 
 ### 🛠 Conda のインストール（Conda が入っていない場合）
-⚠️ 本プロジェクトは将来的に Docker / Dev Container に対応予定です．  
-現在は、以下の手順で Miniconda をインストールして再現実験を行ってください（ホスト環境に影響が出る可能性があります）．
+⚠️ 本プロジェクトは将来的に Docker / Dev Container に対応予定です．現在は，以下の手順で Miniconda をインストールして再現実験を行ってください（ホスト環境に影響が出る可能性があります）．
 
 ```bash
 cd ~
