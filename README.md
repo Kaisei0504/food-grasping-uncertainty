@@ -69,6 +69,10 @@ food-grasping-uncertainty/
 |   ├── dataset_factory_v1.py                     
 │   └── utils.py                                  # ユーティリティ関数
 │
+├── papers/                                        
+│   ├── SSII_abst.pdf                             # SSII論文  
+│   └── SSII_poster.pdf                           # SSIIポスター  
+│ 
 ├── scripts/                                      # 実行スクリプト
 │   ├── data_collection.py                        # 実機を用いたデータ収集
 │   ├── dataset_create.ipynb                      # データセット作成（学習用）
