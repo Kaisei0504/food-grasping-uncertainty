@@ -3,8 +3,8 @@
 ## 📄 学会発表 / Conference Publications
 
 - **SSII 2025 (画像センシングシンポジウム)**
-  - タイトル: 「複数の観点に基づく不確実性を考慮した食品把持」
-  - 著者: 旅田 海聖 ほか
+  - タイトル :「複数の観点に基づく不確実性を考慮した食品把持」
+  - 著者 : 旅田 海聖 ほか
   - [発表抄録 PDF](papers/SSII_abst.pdf)
   - [発表ポスター PDF](papers/SSII_poster.pdf)
 
