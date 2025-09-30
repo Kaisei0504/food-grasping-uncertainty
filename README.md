@@ -3,8 +3,8 @@
 ## 📄 学会発表 / Conference Publications
 
 - **SSII 2025 (画像センシングシンポジウム)**
-  - [発表抄録 PDF](papers/SSII_abst.pdf)
-  - [発表ポスター PDF](papers/SSII_poster.pdf)
+  - [論文 PDF](papers/SSII_abst.pdf)
+  - [ポスター PDF](papers/SSII_poster.pdf)
 
 ## ✨ 研究概要
 
@@ -24,7 +24,7 @@
 
 2. **UA-Sampler（不確実性考慮サンプラー）**
    - 学習時に未知度が低いデータを優先的に学習
-   - 少数の学習データでの性能向上を実現
+   - 少数の学習データでの把持精度向上を実現
 
 ## 🔬 実験設定
 
