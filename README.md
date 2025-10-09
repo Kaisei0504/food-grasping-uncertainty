@@ -1,11 +1,5 @@
 # 🚀 複数の観点に基づく不確実性を考慮した食品把持
 
-## 📄 学会発表 / Conference Publications
-
-- **SSII 2025 (画像センシングシンポジウム)**
-  - [論文 PDF](papers/SSII_abst.pdf)
-  - [ポスター PDF](papers/SSII_poster.pdf)
-
 ## ✨ 研究概要
 
 本研究は，食品製造工場における不定形状食品の自動把持，高精度把持を目的とした研究です．ポテトサラダ等の惣菜の詰め込み作業の自動化，高精度把持に向けて，複数の観点に基づいて不確実性を考慮した深層学習アプローチを提案しています．
@@ -66,10 +60,6 @@ food-grasping-uncertainty/
 │   ├── dataset_factory.py                        # データセット生成
 |   ├── dataset_factory_v1.py                     
 │   └── utils.py                                  # ユーティリティ関数
-│
-├── papers/                                        
-│   ├── SSII_abst.pdf                             # SSII論文  
-│   └── SSII_poster.pdf                           # SSIIポスター  
 │ 
 ├── scripts/                                      # 実行スクリプト
 │   ├── data_collection.py                        # 実機を用いたデータ収集
