@@ -65,6 +65,7 @@ food-grasping-uncertainty/
 │   ├── data_collection.py                        # 実機を用いたデータ収集
 │   ├── dataset_create.ipynb                      # データセット作成（学習用）
 │   ├── evaluate_data_create.ipynb                # データセット作成（評価用）
+│   ├── overlay.ipynb                             # 画像に距離情報を重畳する（お試し）
 │   ├── train_mdn_with_RND_no_sampler.py          # モデルの学習（UA-Samplerなし）
 │   ├── train_mdn_with_RND_sampler.py             # モデルの学習（UA-Samplerあり）
 │   ├── show_results_with_RND_no_sampler.ipynb    # 学習用・テスト用データに対する予測結果の評価（UA-Samplerなし）
