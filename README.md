@@ -33,7 +33,7 @@
 | **未知度のみ** | Random Network Distillationによる未知度のみを考慮 | 従来手法 |
 | **ばらつきのみ** | Mixture Density Networkによる把持量のばらつきのみを考慮 | 従来手法 |
 | **未知度＋ばらつき** | 未知度と把持量のばらつきの両方を考慮 | 多観点不確実性考慮 |
-| **未知度+ばらつき+Sampler** | 上記 + UA-Samplerによる学習データ選択最適化 | **提案手法** |
+| **未知度＋ばらつき＋Sampler** | 上記 + UA-Samplerによる学習データ選択最適化 | **提案手法** |
 
 ## 📊 実験結果
 
@@ -63,7 +63,7 @@ food-grasping-uncertainty/
 │ 
 ├── scripts/                                      # 実行スクリプト
 │   ├── data_collection.py                        # 実機を用いたデータ収集
-│   ├── dataset_create.ipynb                      # データセット作成（学習用）
+│   ├── dataset_create.ipynb                      # データセット作成（学習用）ttttt
 │   ├── evaluate_data_create.ipynb                # データセット作成（評価用）
 │   ├── overlay.ipynb                             # 画像に距離情報を重畳する（お試し）
 │   ├── train_mdn_with_RND_no_sampler.py          # モデルの学習（UA-Samplerなし）
